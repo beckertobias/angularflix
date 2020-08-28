@@ -1,0 +1,8 @@
+<input type="text" id="search" placeholder="Search" (keyup)="onKey($event)">
+<ul class="wrap">
+  <li *ngFor="let movie of movies">
+    <a routerLink="/{{movie.id}}">
+    <img *ngIf="movie.poster_path" src={{rootpath}}{{movie.poster_path}}>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,8 @@
+<h2>{{category_name}}</h2>
+<ul>
+  <li *ngFor="let movie of movies">
+    <a routerLink="/{{movie.id}}">
+    <img *ngIf="movie.poster_path" src={{rootpath}}{{movie.poster_path}}>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+<div *ngIf="categoryList" class="categories">
+  <div *ngFor="let category of categoryList">
+    <button>{{category.name}}</button>
+  </div>
+</div>
+<div>
+  <app-movielist [category_name]="discover"></app-movielist>
+</div>
+<div *ngIf="categoryList">
+  <div *ngFor="let category of categoryList">
+  <app-movielist [category_id]="category.id" [category_name]="category.name"></app-movielist>
+  </div>
+</div>
+

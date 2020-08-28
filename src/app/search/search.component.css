@@ -1,0 +1,18 @@
+#search {
+  border-radius: 5%;
+  padding: 2%;
+}
+
+input {
+  padding: 1%;
+}
+
+.wrap {
+  display: flex;
+  flex-flow: row;
+  list-style: none;
+}
+
+li {
+  padding: 1%;
+}
